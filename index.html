@@ -1043,6 +1043,8 @@
         .contact-info p {
             color: var(--text-secondary);
             font-size: 0.95rem;
+            white-space: normal;
+            word-break: break-word;
         }
 
         /* Footer */
@@ -1446,7 +1448,7 @@
     <section id="about" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-avatar">DV</div>
+                <img src="Profile.jpg" alt="Profile" class="hero-avatar">
                 <h1>Deepa V</h1>
                 <p class="hero-subtitle">Software <span class="typing-effect" id="typingText">QA Engineer</span></p>
                 
@@ -1457,7 +1459,7 @@
                     </div>
                     <div class="hero-meta-item">
                         <i class="fas fa-briefcase"></i>
-                        <span>2+ Years Experience</span>
+                        <span>2 Years Experience</span>
                     </div>
                     <div class="hero-meta-item">
                         <i class="fas fa-award"></i>
@@ -1467,15 +1469,16 @@
 
                 <div class="hero-buttons">
                     <a href="mailto:deepavenkat172@gmail.com" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i>
-                        Contact Me
+                      <i class="fas fa-envelope"></i>
+                      Contact Me
                     </a>
+                  
                     <button class="btn btn-secondary" onclick="downloadResume()" type="button">
-                        <i class="fas fa-download"></i>
-                        Download Resume
+                      <i class="fas fa-download"></i>
+                      Download Resume
                     </button>
-                </div>
-
+                  </div>
+                  
                 <p class="hero-description">
                     Dedicated Software QA Engineer with expertise in manual and automated testing. Passionate about ensuring software quality through comprehensive testing strategies and attention to detail. Experienced in creating test cases, identifying bugs, and collaborating with development teams to deliver high-quality software products.
                 </p>
@@ -1501,7 +1504,11 @@
                         <span class="skill-tag">Appium</span>
                         <span class="skill-tag">WebdriverIO</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">BrowserStack</span>
                         <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Courier</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Cursor</span>
                     </div>
                 </div>
 
@@ -1524,7 +1531,7 @@
                         <span class="skill-tag">Jenkins</span>
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">AWS CodeBuild</span>
-                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">GitHub</span>
                     </div>
                 </div>
             </div>
@@ -1566,7 +1573,8 @@
                 </ul>
                 <div class="tech-tags">
                     <span class="tech-tag">Manual Testing</span>
-                    <span class="tech-tag">UI Automation</span>
+                    <span class="tech-tag">Automation Testing</span>
+                    <span class="tech-tag">JavaScript</span>
                     <span class="tech-tag">JIRA</span>
                     <span class="tech-tag">JavaScript</span>
                     <span class="tech-tag">Playwright</span>
@@ -1591,13 +1599,15 @@
                     <div class="tech-tags">
                         <span class="tech-tag">Manual Testing</span>
                         <span class="tech-tag">Cross-browser Testing</span>
+                        <span class="tech-tag">UI Automation</span>
                         <span class="tech-tag">JIRA</span>
                         <span class="tech-tag">Performance Testing</span>
+                        <span class="tech-tag">Browserstack</span>
                     </div>
                 </div>
 
                 <div class="project-card animate-on-scroll">
-                    <h3 class="project-title">Mobile Banking App Testing</h3>
+                    <h3 class="project-title">Power BI data visualization</h3>
                     <span class="status-badge status-completed">✅ Completed</span>
                     <p class="project-description">
                         Thorough security and functionality testing of a mobile banking application featuring account management, fund transfers, bill payments, and transaction history. Focused on security vulnerabilities, data encryption validation, and seamless user experience across iOS and Android platforms.
@@ -1619,6 +1629,7 @@
                     <div class="tech-tags">
                         <span class="tech-tag">Playwright</span>
                         <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Git & GitHub</span>
                         <span class="tech-tag">API Testing</span>
                         <span class="tech-tag">CI/CD</span>
                     </div>
@@ -1734,8 +1745,8 @@ Certificate</h3>
                 <h3 style="margin-bottom: 0.5rem;">Deepa V</h3>
                 <p style="color: var(--text-secondary);">Software QA Engineer</p>
             </div>
-            <p style="font-weight: 600; margin-bottom: 0.5rem;">&copy; 2024 Deepa V. All rights reserved.</p>
-            <p style="color: var(--text-secondary);">Built with passion for quality • Designed for excellence</p>
+            <p style="font-weight: 600; margin-bottom: 0.5rem;">&copy; 2025 Deepa V. All rights reserved.</p>
+            <p style="color: var(--text-secondary);">Built with passion for quality</p>
         </div>
     </footer>
 
@@ -2062,6 +2073,14 @@ Certificate</h3>
                 imageObserver.observe(img);
             });
         }
+        
+        function downloadResume() {
+            const link = document.createElement("a");
+            link.href = "Deepa_Venkatesh_SDET_2YOE.pdf";
+            link.download = "Deepa_Venkatesh_Resume.pdf";
+            link.click();
+        }
+        
 
         // Add smooth reveal animation for sections
         const revealElements = document.querySelectorAll('section');
